@@ -78,6 +78,11 @@ plugins:
   - exclude-search:
       exclude:
         - /*/index.md
+  - to-pdf:
+      output_path: pdf/homm3-bg-database.pdf
+      cover_title: "Heroes of Might and Magic 3: The Board Game Database"
+      cover_subtitle: "Complete Cards Database"
+      enabled_if_env: ENABLE_PDF_EXPORT
   - i18n:
       docs_structure: suffix
       fallback_to_default: true
